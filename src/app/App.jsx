@@ -1,10 +1,18 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import LoginPage from "./commponents/LoginPage";
+import Register from "./commponents/Register";
+
 function App() {
   return (
-    <>
-      <LoginPage />
-    </>
+    <Router>
+      <Routes>
+        {/* Default route redirects to login */}
+        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </Router>
   );
 }
 

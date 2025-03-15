@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-const LoginPage = () => {
+const Register = () => {
   return (
     <div className="flex min-h-screen ">
     <div className="flex justify-center relative  w-full flex-col justify-center bg-[#0B3B3C] px-12 lg:w-1/2">
@@ -13,9 +13,12 @@ const LoginPage = () => {
             <input type="email" placeholder="e-mail" className="h-12 w-88 bg-white placeholder:text-slate-[#0B3B3C] rounded-3xl pl-7" />
             <br/>
             <input type="password" placeholder="Password" className="h-12 w-88 bg-white placeholder:text-slate-[#0B3B3C] rounded-3xl pl-7" /><br/>
-            <button className="h-12 w-32 border-1 border-white text-white hover:bg-gray-100 hover:text-black cursor-pointer rounded-3xl" >Login</button>
-            <Link to="/register" className="text-white pl-5 underline">Click here to register</Link>
+            <input type="password" placeholder="ConfirmPassword" className="h-12 w-88 bg-white placeholder:text-slate-[#0B3B3C] rounded-3xl pl-7" /><br/>
+            <button className="h-12 w-32 border-1 border-white text-white hover:bg-gray-100 hover:text-black cursor-pointer rounded-3xl">Login</button>
         </form>
+
+             <Link to="/Login" className="text-white pt-[30px]"> &lt; Back to Login </Link>
+         
     </div>
     <div className="absolute right-0 top-0 h-full w-[100px] translate-x-[98px]">
           <div
@@ -44,4 +47,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage;
+export default Register
