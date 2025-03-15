@@ -13,7 +13,7 @@ const LoginPage = () => {
             <input type="email" placeholder="e-mail" className="h-12 w-88 bg-white placeholder:text-slate-[#0B3B3C] rounded-3xl pl-7" />
             <br/>
             <input type="password" placeholder="Password" className="h-12 w-88 bg-white placeholder:text-slate-[#0B3B3C] rounded-3xl pl-7" /><br/>
-            <button className="h-12 w-32 border-1 border-white text-white hover:bg-gray-100 hover:text-black cursor-pointer rounded-3xl" >Login</button>
+            <Link to="/welcomepage" ><button className="h-12 w-32 border-1 border-white text-white hover:bg-gray-100 hover:text-black cursor-pointer rounded-3xl">Login</button></Link>
             <Link to="/register" className="text-white pl-5 underline">Click here to register</Link>
         </form>
     </div>
