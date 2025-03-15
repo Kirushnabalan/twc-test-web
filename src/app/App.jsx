@@ -1,12 +1,10 @@
 
 import './App.css'
-
+import LoginPage from './commponents/LoginPage'
 function App() {
-
-
   return (
     <>
-      <h1>React 18 App</h1>
+      <LoginPage />
     </>
   )
 }
